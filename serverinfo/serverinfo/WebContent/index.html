@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{background-color:#E0D8E0;font-family:verdana;}
+			#getForm{text-align:center;margin-top:30px;	}
+			#postForm{text-align:center;	}
+			#userForm{text-align:center;margin-top:210px;margin-left:250px;margin-right:250px;background-color:#E0D8E0;}
+			#sub1, #sub2{width:300px;height:40px;}
+			.txt_color{color:#000000;font-weight:bold;}
+		</style>
+	</head>
+	<body>
+		<div id="userForm">
+				<br>		
+		</div>
+		<div id="getForm">
+			<form action="serverinfo" method="get">
+				<span class="txt_color">User Server Name  :</span> &nbsp;<input type="text" name="user_server"/><br>
+				<span class="txt_color">Other Information :</span> &nbsp;<input type="text" name="other_information" /><br><br>
+				<input id="sub1" name="submit" type="submit" value="Submit Server Information"/>
+			</form>
+		</div>
+		
+		<div id="postForm">
+			<form action="serverinfo" method="post">
+			<input id="sub2" name="submit" type="submit" value="READ Server data" />
+			</form>
+		</div>
+		
+	</body>
+</html>
